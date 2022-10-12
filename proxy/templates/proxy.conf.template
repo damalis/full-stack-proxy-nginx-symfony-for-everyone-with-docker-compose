@@ -83,16 +83,16 @@ server {
         default_type image/svg+xml;
     }
     location = /favicon.ico {
-        log_not_found off;        
+        log_not_found off;
     }
     location = /robots.txt {
         allow all;
-        log_not_found off;        
+        log_not_found off;
     }
     location ~/\. {
         deny all;     
         log_not_found off;
-    }    
+    }
 	#
 	access_log off;
 	error_log  /var/log/nginx/${NGINX_HOST}.error.log error;
