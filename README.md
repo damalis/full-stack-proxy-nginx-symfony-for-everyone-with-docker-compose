@@ -255,7 +255,7 @@ class DefaultController extends AbstractController
 {
     public function index(Request $request): Response
     {
-        return new Response("<html><body><br/><br/><center><p style=\"font-size:55px\">Hello World</p></center></body></html>");
+        return new Response("<html><body><br/><br/><center><p style=\"font-size:55px\">Hello World!</p></center></body></html>");
     }
 }
 ```
