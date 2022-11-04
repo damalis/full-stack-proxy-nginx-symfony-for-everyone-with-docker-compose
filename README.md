@@ -261,6 +261,18 @@ class DefaultController extends AbstractController
 ```
 
 Save it, and refresh your project page.
+
+#### to display Symfony Web Debug Toolbar
+
+must add the below code in the ```./symfony/webapp/config/packages/framework.yaml``` file.
+
+```
+framework:
+    # ...
+    # trust *all* requests (the 'REMOTE_ADDR' string is replaced at
+    # run time by $_SERVER['REMOTE_ADDR'])
+    trusted_proxies: 'symfony,REMOTE_ADDR'
+```
 										
 #### Proxy
 
