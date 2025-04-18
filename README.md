@@ -327,7 +327,7 @@ Save it, and refresh your project page.
 
 #### to display Symfony Web Debug Toolbar
 
-must add the below code in the ```./symfony/webapp/config/packages/framework.yaml``` file.
+must add the below code in the ```./symfony/config/packages/framework.yaml``` file.
 
 ```
 framework:
