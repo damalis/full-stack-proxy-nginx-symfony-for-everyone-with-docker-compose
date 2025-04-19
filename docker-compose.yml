@@ -53,6 +53,10 @@ services:
             - type: bind
               source: ./webserver
               target: '${HTTPD_PREFIX}/conf'
+            - type: bind
+              source: ./webserver/.htaccess
+              target: '${WEBSERVER_DOC_ROOT}/public/.htaccess'
+              read_only: true
         hostname: webserver
         restart: unless-stopped
         ports:
